@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
+
+
+
 // search module
 import { NgPipesModule } from 'ngx-pipes';
 

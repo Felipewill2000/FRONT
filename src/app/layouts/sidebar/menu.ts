@@ -82,8 +82,15 @@ export const MENU: MenuItem[] = [
   },
   {
     id: 13,
-    label: 'Ventas',
+    label: 'jajas',
     link: '/ventas',
+    icon: 'ri-dashboard-2-line',
+    isCollapsed: false,
+  },
+  {
+    id: 14,
+    label: 'Formulario',
+    link: 'formulariotest/forulario',
     icon: 'ri-dashboard-2-line',
     isCollapsed: false,
   }
