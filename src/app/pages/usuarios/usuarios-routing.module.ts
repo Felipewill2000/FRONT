@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CrearUsuarioComponent } from './crear-usuario/crear-usuario.component';
-import { ListarUsuarioComponent } from './listar-usuario/listar-usuario.component';
+import { CrearusComponent } from './crear/crearus.component';
+import { ListarusComponent } from './lista/listarus.component';  
 
 const routes: Routes = [
-  {path: 'crear', component: CrearUsuarioComponent},
-  {path: 'listar', component: ListarUsuarioComponent},
+  {path: 'crear', component: CrearusComponent},
+  {path: 'lista', component: ListarusComponent},
 
 ];
 
@@ -15,3 +15,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class UsuariosRoutingModule { }
+
+

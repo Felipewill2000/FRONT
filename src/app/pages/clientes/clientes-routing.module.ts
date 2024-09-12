@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CrearComponent } from './crear/crear.component';
 import { ListarComponent } from './listar/listar.component';
 
+
 const routes: Routes = [
   { path: 'crear', component:CrearComponent },
 
@@ -16,3 +17,8 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class ClientesRoutingModule { }
+
+
+
+
+

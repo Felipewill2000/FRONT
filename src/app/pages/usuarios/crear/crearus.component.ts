@@ -1,13 +1,12 @@
-import { Component } from "@angular/core";
-import { FormGroup, FormBuilder, Validators } from "@angular/forms";
-
+import { Component } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-crear',
-  templateUrl: './crear.component.html',
-  styleUrl: './crear.component.scss'
+  selector: 'app-crearus',
+  templateUrl: './crearus.component.html',
+  styleUrl: './crearus.component.scss'
 })
-export class CrearComponent {
+export class CrearusComponent {
   form: FormGroup; 
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
@@ -21,5 +20,7 @@ export class CrearComponent {
     console.log('Formulario enviado', this.form);
   }
 }
+
+
 
 

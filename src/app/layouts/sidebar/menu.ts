@@ -55,7 +55,7 @@ export const MENU: MenuItem[] = [
       {
         id: 9,
         label: 'listar usuarios',
-        link: '/usuarios/listar',
+        link: '/usuarios/lista',
         parentId: 7
       },
     ]
@@ -82,7 +82,7 @@ export const MENU: MenuItem[] = [
   },
   {
     id: 13,
-    label: 'jajas',
+    label: 'ventas',
     link: '/ventas',
     icon: 'ri-dashboard-2-line',
     isCollapsed: false,
@@ -90,7 +90,7 @@ export const MENU: MenuItem[] = [
   {
     id: 14,
     label: 'Formulario',
-    link: 'formulariotest/forulario',
+    link: '/formulariotest',
     icon: 'ri-dashboard-2-line',
     isCollapsed: false,
   }

@@ -13,7 +13,7 @@ const routes: Routes = [
       path: '', loadChildren: () => import('./dashboards/dashboards.module').then(m => m.DashboardsModule)
     },
     {
-      path: 'Ventas', loadChildren: () => import('./ventas/ventas.module').then(m => m.VentasModule)
+      path: 'ventas', loadChildren: () => import('./ventas/ventas.module').then(m => m.VentasModule)
     },
     {
       path: 'apps', loadChildren: () => import('./apps/apps.module').then(m => m.AppsModule)
@@ -21,7 +21,9 @@ const routes: Routes = [
     {
       path: 'ecommerce', loadChildren: () => import('./ecommerce/ecommerce.module').then(m => m.EcommerceModule)
     },
-
+    {
+      path: 'formulariotest', loadChildren: () => import('./formulariotest/formulariotest.module').then(m => m.FormulariotestModule)
+    },
 
     {
       path: 'productos', loadChildren: () => import('./productos/productos.module').then(m => m.ProductosModule)
