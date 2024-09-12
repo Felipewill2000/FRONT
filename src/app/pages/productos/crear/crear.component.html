@@ -1,1 +1,92 @@
-<p>crear works!</p>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Creación de Producto</title>
+    <style>
+      .form-container {
+        max-width: 600px;
+              margin: auto;
+              padding: 20px;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Crear Producto</h1>
+      <form action="/crear-producto" method="POST">
+        <!-- Nombre del Producto -->
+        <div class="form-group">
+          <label for="nombre">Nombre del Producto:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <!-- Descripción del Producto -->
+        <div class="form-group">
+          <label for="descripcion">Descripción:</label>
+          <textarea
+            id="descripcion"
+            name="descripcion"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Precio del Producto -->
+        <div class="form-group">
+          <label for="precio">Precio:</label>
+          <input type="number" id="precio" name="precio" step="0.01" required />
+        </div>
+
+        <!-- Categoría del Producto -->
+        <div class="form-group">
+          <label for="categoria">Categoría:</label>
+          <select id="categoria" name="categoria" required>
+            <option value="">Seleccione una categoría</option>
+            <option value="Equipos">Equipos</option>
+            <option value="Componentes PC">Componentes PC</option>
+            <option value="Almacenamiento">Almacenamiento</option>
+            <option value="Accesorios">Accesorios</option>
+          </select>
+        </div>
+
+        <!-- Botón de Enviar -->
+        <div class="form-group">
+          <button type="submit">Crear Producto</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

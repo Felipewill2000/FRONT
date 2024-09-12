@@ -21,9 +21,7 @@ const routes: Routes = [
     {
       path: 'ecommerce', loadChildren: () => import('./ecommerce/ecommerce.module').then(m => m.EcommerceModule)
     },
-    {
-      path: 'formulariotest', loadChildren: () => import('./formulariotest/formulariotest.module').then(m => m.FormulariotestModule)
-    },
+    
 
     {
       path: 'productos', loadChildren: () => import('./productos/productos.module').then(m => m.ProductosModule)
