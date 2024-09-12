@@ -4,6 +4,7 @@ import { CrearusComponent } from './crear/crearus.component';
 import { ListarusComponent } from './lista/listarus.component';  
 
 const routes: Routes = [
+  
   {path: 'crear', component: CrearusComponent},
   {path: 'lista', component: ListarusComponent},
 

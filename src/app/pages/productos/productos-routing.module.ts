@@ -5,7 +5,7 @@ import { CrearComponent } from './crear/crear.component';
 import { CategorizarComponent } from './categorizar/categorizar.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'listar', pathMatch: 'full'},
+
   {path: 'listar', component: ListarComponent},
   {path: 'crear', component: CrearComponent},
   {path: 'categorizar', component: CategorizarComponent},
