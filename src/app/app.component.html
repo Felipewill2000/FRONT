@@ -1,3 +1,6 @@
 <router-outlet></router-outlet>
-<!-- app.component.html -->
-
+<div *ngIf="datos">
+    <h2>Datos Obtenidos</h2>
+    <pre>{{ datos | json }}</pre>
+  </div>
+  

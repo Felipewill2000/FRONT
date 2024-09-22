@@ -12,8 +12,9 @@ import { ListarComponent } from './listar/listar.component';
     ListarComponent
   ],
   imports: [ 
-    ReactiveFormsModule,
     CommonModule,
+    ReactiveFormsModule,
+    
     ClientesRoutingModule,
     
 

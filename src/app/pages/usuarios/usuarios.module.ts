@@ -12,9 +12,7 @@ import { ListarusComponent } from './lista/listarus.component';
     ListarusComponent
   ],
   imports: [
-  
-
-   CommonModule,
+    CommonModule,
     ReactiveFormsModule, // Asegúrate de que ReactiveFormsModule está aquí
     UsuariosRoutingModule
   ]

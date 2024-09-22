@@ -52,7 +52,8 @@ if (environment.defaultauth === 'firebase') {
 }
 
 @NgModule({ declarations: [
-        AppComponent
+        AppComponent,
+
     ],
     bootstrap: [AppComponent], imports: [TranslateModule.forRoot({
             defaultLanguage: 'en',
@@ -62,8 +63,9 @@ if (environment.defaultauth === 'firebase') {
                 deps: [HttpClient]
             }
         }),
+       
         BrowserAnimationsModule,
-        BrowserModule,
+        BrowserModule, 
         AppRoutingModule,
         LayoutsModule,
         StoreModule.forRoot(rootReducer),
