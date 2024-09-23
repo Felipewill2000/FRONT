@@ -9,8 +9,8 @@ export const MENU: MenuItem[] = [
   },
   {
     id: 2,
-    label: 'Home',
-    link: '/analytics',
+    label: 'Tienda',
+    link: '/ecommerce/products',
     icon: 'ri-dashboard-2-line',
     isCollapsed: false,
   },
@@ -86,7 +86,8 @@ export const MENU: MenuItem[] = [
     link: '/ventas',
     icon: 'ri-dashboard-2-line',
     isCollapsed: false,
-  }
+  },
+ 
   /*
   {
     id: 1,

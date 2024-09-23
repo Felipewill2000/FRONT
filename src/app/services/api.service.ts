@@ -6,13 +6,13 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ApiService {
-  private apiUrl = 'http://localhost:3000/api'; // Asegúrate de que esta URL sea correcta
+  private apiUrl = 'http://localhost:3000/api';
 
   constructor(private http: HttpClient) {}
 
   // Método para crear un producto
   crearProducto(productoData: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/productos/crear`, productoData); // Ajusta la URL según tu backend
+    return this.http.post(`${this.apiUrl}/productos/crear`, productoData); 
   }
 
   // Método para crear un usuario
