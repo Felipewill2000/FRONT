@@ -1,3 +1,23 @@
-<h1>{{producto.name}}</h1>
-<img [src]="producto.image" alt="{{producto.name}}" width="300">
-<p>Costo: {{producto.costo}}</p>
+<div class="product-modal">
+  <!-- Mostrar el nombre del producto -->
+  <h1>{{producto.name}}</h1>
+  
+  <!-- Mostrar la imagen del producto -->
+  <img [src]="producto.image" alt="{{producto.name}}" class="img-fluid" width="300">
+
+  <!-- Mostrar la descripción del producto -->
+  <p class="descripcion">{{producto.descripcion}}</p>
+
+  <!-- Mostrar el precio del producto -->
+  <!-- <p>Precio: ${{producto.costo | currency:'':'symbol':'1.0-0'}}</p> -->
+  
+  <!-- Cantidad a comprar -->
+  <div class="cantidad">
+    <label for="cantidad">Cantidad a llevar:</label>
+    <!-- Campo para ingresar la cantidad a comprar -->
+    <!-- <input type="number" id="cantidad" [(ngModel)]="cantidad" min="1" class="form-control" style="width: 80px;"> -->
+  </div>
+
+  <!-- Botón para comprar -->
+  <button class="btn btn-success mt-3" (click)="comprarProducto()">Comprar</button>
+</div>

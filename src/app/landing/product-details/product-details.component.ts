@@ -1,21 +1,18 @@
-
-import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-
-interface Producto {
-  id: number;
-  name: string;
-  image: string;
-  costo: number;
-}
-
+import { Component, OnInit } from '@angular/core';
+import {Producto} from 'src/app/core/data/iproductos.interface'
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
-  styleUrls: ['./product-details.component.scss']
+  styleUrl: './product-details.component.scss'
 })
-export class ProductDetailsComponent {
+  export class ProductDetailsComponent implements OnInit {
+    producto:Partial<Producto> = {};
+  ngOnInit(): void {
 
-  constructor(@Inject(MAT_DIALOG_DATA) public producto: Producto) { }
+  }
 
+  comprarProducto(){
+    
+  }
+  
 }

@@ -1,20 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ProductDetailsComponent } from '../product-details/product-details.component';
-
-interface Producto {
-  id: number;
-  name: string;
-  image: string;
-  costo: number;
-}
+import {Producto} from 'src/app/core/data/iproductos.interface'
 
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.scss']
 })
-
 export class IndexComponent implements OnInit {
 
   currentSection = 'home';
@@ -35,20 +28,22 @@ export class IndexComponent implements OnInit {
         id: 1,
         name: "Producto1",
         image: "https://sipoonline.cl/wp-content/uploads/2023/06/Pc-Halo-5600x_rtx-4060.png",
-        costo: 1000
+        costo: 1000,
+        descripcion: "Esta es la descripción del Producto 1"
       },
       {
         id: 2,
         name: "Producto2",
         image: "https://sipoonline.cl/wp-content/uploads/2022/11/Pc-Maxus.png",
-        costo: 2000
+        costo: 2000,
+        descripcion: "Esta es la descripción del Producto 2"
       },
     ];
   }
 
   visualizarProducto(producto: Producto) {
     this.dialog.open(ProductDetailsComponent, {
-      width: '400px',
+      width: '500px', // Ajustamos el tamaño del modal
       data: producto
     });
   }

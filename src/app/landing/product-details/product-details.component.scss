@@ -1,0 +1,29 @@
+.product-modal {
+    text-align: center;
+  
+    img {
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+  
+    .descripcion {
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+  
+    .cantidad {
+      margin-top: 20px;
+  
+      input {
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+  
+    button {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  

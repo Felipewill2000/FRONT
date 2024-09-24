@@ -74,8 +74,8 @@
                             <div class="product-card">
                                 <img [src]="producto.image" alt="{{producto.name}}" class="img-fluid">
                                 <h5>{{producto.name}}</h5>
-                                <p class="price">${{producto.costo | currency:'':'symbol':'1.0-0'}}</p>
-                                <button mat-button (click)="visualizarProducto(producto)" class="btn btn-success">Visualizar producto</button>
+                                <p class="price">{{producto.costo | currency:'':'symbol':'1.0-0'}}</p>
+                                <a [routerLink]="['/landing/product-details', producto.id]" class="btn btn-success">Visualizar producto</a>
                             </div>
                         </div>
                     </div>
