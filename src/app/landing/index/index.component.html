@@ -69,177 +69,13 @@
                     <h3 class="text-center mb-4" style="color: white; font-size: 1.75em; font-family: 'TuTipoDeLetra', sans-serif;">Nuestros Productos</h3>
                     <!-- Grilla de productos -->
                     <div class="row g-4">
-                        <!-- Producto 1 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
+                        <!-- Productos -->
+                        <div *ngFor="let producto of productos" class="col-lg-3 col-md-4 col-sm-6">
                             <div class="product-card">
-                                <img src="assets/images/product1.jpg" alt="Producto 1" class="img-fluid">
-                                <h5>Nombre del Producto 1</h5>
-                        
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/1" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 2 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product2.jpg" alt="Producto 2" class="img-fluid">
-                                <h5>Nombre del Producto 2</h5>
-                               
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/2" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 3 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product3.jpg" alt="Producto 3" class="img-fluid">
-                                <h5>Nombre del Producto 3</h5>
-                             
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/3" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 4 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product4.jpg" alt="Producto 4" class="img-fluid">
-                                <h5>Nombre del Producto 4</h5>
-                              
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/4" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 5 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product5.jpg" alt="Producto 5" class="img-fluid">
-                                <h5>Nombre del Producto 5</h5>
-                              
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/5" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 6 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product6.jpg" alt="Producto 6" class="img-fluid">
-                                <h5>Nombre del Producto 6</h5>
-                              
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/6" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 7 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product7.jpg" alt="Producto 7" class="img-fluid">
-                                <h5>Nombre del Producto 7</h5>
-                                
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/7" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 8 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product8.jpg" alt="Producto 8" class="img-fluid">
-                                <h5>Nombre del Producto 8</h5>
-                              
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/8" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 9 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product9.jpg" alt="Producto 9" class="img-fluid">
-                                <h5>Nombre del Producto 9</h5>
-                                
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/9" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 10 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product10.jpg" alt="Producto 10" class="img-fluid">
-                                <h5>Nombre del Producto 10</h5>
-                                
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/10" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 11 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product11.jpg" alt="Producto 11" class="img-fluid">
-                                <h5>Nombre del Producto 11</h5>
-                               
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/11" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 12 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product12.jpg" alt="Producto 12" class="img-fluid">
-                                <h5>Nombre del Producto 12</h5>
-                           
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/12" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 13 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product13.jpg" alt="Producto 13" class="img-fluid">
-                                <h5>Nombre del Producto 13</h5>
-                               
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/13" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 14 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product14.jpg" alt="Producto 14" class="img-fluid">
-                                <h5>Nombre del Producto 14</h5>
-                              
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/14" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-
-                        <!-- Producto 15 -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product15.jpg" alt="Producto 15" class="img-fluid">
-                                <h5>Nombre del Producto 15</h5>
-                               
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/15" class="btn btn-success">Visualizar producto</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="product-card">
-                                <img src="assets/images/product16.jpg" alt="Producto 16" class="img-fluid">
-                                <h5>Nombre del Producto 16</h5>
-                                
-                                <p class="price">$XX.XX</p>
-                                <a routerLink="/producto/16" class="btn btn-success">Visualizar producto</a>
+                                <img [src]="producto.image" alt="{{producto.name}}" class="img-fluid">
+                                <h5>{{producto.name}}</h5>
+                                <p class="price">${{producto.costo | currency:'':'symbol':'1.0-0'}}</p>
+                                <button mat-button (click)="visualizarProducto(producto)" class="btn btn-success">Visualizar producto</button>
                             </div>
                         </div>
                     </div>
@@ -247,7 +83,12 @@
             </div>
         </section>
         <!-- fin de la sección de productos -->
-                    
+        
+        <!-- botón para volver arriba -->
+        <button id="back-to-top" title="Ir al inicio" (click)="topFunction()" class="btn btn-danger btn-icon landing-back-top">
+            <i class="ri-arrow-up-line"></i>
+        </button>
+        <!-- fin botón para volver arriba -->
 
         <!-- inicio de la sección de contacto -->
         <section class="section" id="contact">
@@ -297,11 +138,5 @@
         <!-- fin de la sección de contacto -->
 
         <app-footer></app-footer>
-
-        <!-- botón para volver arriba -->
-        <button (click)="topFunction()" class="btn btn-danger btn-icon landing-back-top" id="back-to-top">
-            <i class="ri-arrow-up-line"></i>
-        </button>
-        <!-- fin botón para volver arriba -->
     </div>
 </div>

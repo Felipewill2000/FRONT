@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 // search module
 import { NgPipesModule } from 'ngx-pipes';
@@ -24,6 +26,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
 // Store
+
 import { rootReducer } from './store';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
@@ -68,6 +71,7 @@ if (environment.defaultauth === 'firebase') {
         BrowserModule, 
         AppRoutingModule,
         LayoutsModule,
+        MatDialogModule,
         StoreModule.forRoot(rootReducer),
         StoreDevtoolsModule.instrument({
             maxAge: 25, // Retains last 25 states

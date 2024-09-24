@@ -5,7 +5,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ProductosRoutingModule } from './productos-routing.module';
 import { ListarComponent} from './listar/listar.component';
 import { CrearComponent } from './crear/crear.component';
-import { CategorizarComponent } from './categorizar/categorizar.component';
 import { UsuariosModule } from '../usuarios/usuarios.module';
 
 
@@ -13,7 +12,7 @@ import { UsuariosModule } from '../usuarios/usuarios.module';
   declarations: [
     CrearComponent,
     ListarComponent,
-    CategorizarComponent
+  
   ],
   imports: [ 
     CommonModule,

@@ -68,17 +68,17 @@ export class LoginComponent implements OnInit {
     this.submitted = true;
 
      // Login Api
-     this.store.dispatch(login({ email: this.f['email'].value, password: this.f['password'].value }));
-    // this.authenticationService.login(this.f['email'].value, this.f['password'].value).subscribe((data:any) => { 
-    //   if(data.status == 'success'){
-    //     sessionStorage.setItem('toast', 'true');
-    //     sessionStorage.setItem('currentUser', JSON.stringify(data.data));
-    //     sessionStorage.setItem('token', data.token);
-    //     this.router.navigate(['/']);
-    //   } else {
-    //     this.toastService.show(data.data, { classname: 'bg-danger text-white', delay: 15000 });
-    //   }
-    // });
+     //this.store.dispatch(login({ email: this.f['email'].value, password: this.f['password'].value }));
+    this.authenticationService.login(this.f['email'].value, this.f['password'].value).subscribe((data:any) => { 
+      if(data.status == 'success'){
+        sessionStorage.setItem('toast', 'true');
+        sessionStorage.setItem('currentUser', JSON.stringify(data.data));
+        sessionStorage.setItem('token', data.token);
+        this.router.navigate(['/']);
+      } else {
+        this.toastService.show(data.data, { classname: 'bg-danger text-white', delay: 15000 });
+      }
+    });
 
     // stop here if form is invalid
     // if (this.loginForm.invalid) {

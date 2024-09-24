@@ -9,8 +9,8 @@ export const MENU: MenuItem[] = [
   },
   {
     id: 2,
-    label: 'Home',
-    link: '/analytics',
+    label: 'Volver a tinda',
+    link: '/landing',
     icon: 'ri-dashboard-2-line',
     isCollapsed: false,
   },
@@ -32,56 +32,51 @@ export const MENU: MenuItem[] = [
         link: '/productos/listar',
         parentId: 3
       },
-      {
-        id: 6,
-        label: 'Categorizar Productos',
-        link: '/productos/categorizar',
-        parentId: 3
-      }
+     
     ]
   },
   {
-    id: 7,
+    id: 6,
     label: 'usuarios',
     icon: 'ri-dashboard-2-line',
     isCollapsed: true,
     subItems: [
       {
-        id: 8,
+        id: 7,
         label: 'Crear usuario',
         link: '/usuarios/crear',
-        parentId: 7
+        parentId: 6
       },
       {
-        id: 9,
+        id: 8,
         label: 'listar usuarios',
         link: '/usuarios/lista',
-        parentId: 7
+        parentId: 6
       },
     ]
   },
   {
-    id: 10,
+    id: 9,
     label: 'Clientes',
     icon: 'ri-dashboard-2-line',
     isCollapsed: true,
     subItems: [
       {
-        id: 11,
+        id: 10,
         label: 'Crear cliente',
         link: '/clientes/crear',
-        parentId: 10
+        parentId: 9
       },
       {
-        id: 12,
+        id: 11,
         label: 'listar clientes',
         link: '/clientes/listar',
-        parentId: 10
+        parentId: 9
       },
     ]
   },
   {
-    id: 13,
+    id: 12,
     label: 'ventas',
     link: '/ventas',
     icon: 'ri-dashboard-2-line',

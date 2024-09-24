@@ -2,24 +2,11 @@
 <div class="app-menu navbar-menu">
   <!-- LOGO -->
   <div class="navbar-brand-box">
-    <!-- Dark Logo-->
-    <a routerLink="/" class="logo logo-dark">
-      <span class="logo-sm">
-        <img src="assets/images/logo-light.png" alt="" height="200">
-      </span>
-      <span class="logo-lg">
-        <img src="assets/images/logo-light.png" alt="" height="200">
-      </span>
+    <!-- Logo de Electra -->
+    <a routerLink="/" class="logo">
+      <img src="assets/images/iconoelectra.png" alt="Logo Electra" height="100" class="mx-auto d-block">
     </a>
-    <!-- Light Logo-->
-    <a routerLink="/" class="logo logo-light">
-      <span class="logo-sm">
-        <img src="assets/images/logo-light.png" alt="" height="200">
-      </span>
-      <span class="logo-lg">
-        <img src="assets/images/logo-light.png" alt="" height="200">
-      </span>
-    </a>
+
     <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
       <i class="ri-record-circle-line"></i>
     </button>
@@ -39,8 +26,8 @@
           <li class="nav-item">
             @if(hasItems(item)){
             <a href="javascript:void(0);" class="is-parent nav-link menu-link" [ngClass]="{'has-arrow': !item.badge, 'has-dropdown': item.badge}" data-bs-toggle="collapse" [attr.aria-expanded]="!item.isCollapsed" (click)="toggleItem(item)">
-              <i class="{{ item.icon }} icon nav-icon" class=""></i>
-              <span class=""> {{ item.label | translate }}</span>
+              <i class="{{ item.icon }} icon nav-icon"></i>
+              <span class="">{{ item.label | translate }}</span>
               @if(item.badge){<span class="badge badge-pill {{item.badge.variant}}">{{item.badge.text
                 | translate}}</span>}
             </a>
@@ -103,7 +90,7 @@
             </div>
             }@else {
             <a [routerLink]="item.link" routerLinkActive="active" class="side-nav-link-ref nav-link menu-link">
-              @if(item.icon){<i class="bx {{ item.icon }} icon nav-icon" class=""></i>}
+              @if(item.icon){<i class="bx {{ item.icon }} icon nav-icon"></i>}
               <span class=""> {{ item.label | translate }} </span>
               @if(item.badge){<span class="badge {{item.badge.variant}} float-end">{{item.badge.text |
                 translate}}</span>}
