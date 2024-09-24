@@ -3,14 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Component pages
 import { DashboardComponent } from "./dashboards/dashboard/dashboard.component";
+import { LandingModule } from '../landing/landing.module';
 
 const routes: Routes = [
     {
         path: "",
-        component: DashboardComponent
+        component: LandingModule
     },
     {
-      path: '', loadChildren: () => import('./dashboards/dashboards.module').then(m => m.DashboardsModule)
+      path: '', loadChildren: () => import('../landing/landing.module').then(m => m.LandingModule)
     },
     {
       path: 'ventas', loadChildren: () => import('./ventas/ventas.module').then(m => m.VentasModule)
