@@ -1,4 +1,4 @@
-import { Component, TemplateRef } from '@angular/core';
+/* import { Component, TemplateRef } from '@angular/core';
 
 import { ToastService } from './toast-service';
 
@@ -28,3 +28,4 @@ export class ToastsContainericon {
 
   isTemplate(toast: { textOrTpl: any; }) { return toast.textOrTpl instanceof TemplateRef; }
 }
+ */
